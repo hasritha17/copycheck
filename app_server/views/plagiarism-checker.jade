@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  section.plagiarism-checker
+    .plagiarism-container
+      h1 Plagiarism Checker
+
+      form(action="/check-plagiarism", method="post", enctype="multipart/form-data")
+        .form-group
+          label(for="numberOfFiles") Number of Files:
+          input(type="number", name="numberOfFiles", id="numberOfFiles", min="1", required)
+
+        .form-group
+          label(for="assignmentFiles") Choose File(s):
+          input(type="file", name="assignmentFiles", id="assignmentFiles", required, multiple)
+
+        .form-group
+          button(type="submit") Check Plagiarism Score

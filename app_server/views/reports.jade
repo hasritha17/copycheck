@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  section.reports
+    .reports-container
+      h1 Assignment Reports
+
+      form(action="/submit-report")
+        .form-group
+          label(for="reportName") Report Name:
+          input(type="text", name="reportName", id="reportName", required)
+
+        .form-group.center-button
+          button(type="submit") Submit Report

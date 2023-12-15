@@ -1,0 +1,112 @@
+.dashboard {
+  text-align: center;
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+}
+
+.image-links {
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.image-container a {
+  text-decoration: none; /* Remove underline from links */
+  color: #000; /* Set the color of link text */
+}
+
+.image-container img {
+  width: 300px; /* Set the width of each image */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #ddd; /* Add a border for styling */
+  border-radius: 5px; /* Add rounded corners for styling */
+  margin: 10px;
+}
+
+.image-container h3 {
+  margin-top: 5px; /* Adjust the margin as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+.login-form {
+  text-align: center;
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+}
+
+.register-form {
+  text-align: center;
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+}
+
+.login-header {
+  text-align: center;
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+}
+
+.register-header {
+  text-align: center;
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+}
+
+label {
+  display: inline-block;
+  width: 120px; /* Adjust the width as needed */
+  text-align: right;
+  margin-right: 10px;
+}
+
+input {
+  width: 400px; /* Adjust the width as needed */
+}
+
+.input-group {
+  margin-bottom: 30px; /* Adjust the margin as needed */
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:50vh; /* Set the height of the container to the full viewport height */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Adjust as needed for spacing between form elements */
+}
+
+.plagiarism-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:50vh; /* Set the height of the container to the full viewport height */
+}
+
+.reports-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:50vh; /* Set the height of the container to the full viewport height */
+}
+
+.sr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:50vh; /* Set the height of the container to the full viewport height */
+}
+
+.center-button {
+  text-align: center;
+}

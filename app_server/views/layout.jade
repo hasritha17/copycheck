@@ -1,0 +1,90 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title CopyCheck
+
+    link(rel='stylesheet', href='../stylesheets/style.css')
+
+    // Include Bootstrap CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+
+    // Include PT Sans font from Google Fonts
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap')
+
+    // Custom styles for the navigation bar and page background
+    style.
+      body {
+        background: linear-gradient(to right, #ffffff, #3596b9);
+        font-family: 'PT Sans', sans-serif; // Use PT Sans font
+      }
+
+      .navbar-custom {
+        background: linear-gradient(to right, #87CEEB, #001f3f);
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .navbar-custom .navbar-nav .nav-link {
+        color: #ffffff;
+        font-family: 'PT Sans', sans-serif; // Use PT Sans font
+        font-weight: bold;
+      }
+
+      .navbar-custom .navbar-nav .nav-link.home,
+      .navbar-custom .navbar-nav .nav-link.faq,
+      .navbar-custom .navbar-nav .nav-link.contact,
+      .navbar-custom .navbar-nav .nav-link.chapters,
+      .navbar-custom .navbar-nav .nav-link.events {
+        color: #ffffff;
+      }
+
+      .navbar-custom .navbar-nav .nav-item.active .nav-link {
+        color: #ffd700;
+      }
+
+      .navbar-custom .navbar-brand {
+        margin-left: -30px;
+        color: #060120;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: 'PT Sans', sans-serif; // Use PT Sans font
+      }
+
+      .navbar-custom .navbar-brand img {
+        height: 50px;
+        margin-right: 10px;
+      }
+
+      .navbar-custom .navbar-toggler-icon {
+        background-color: #ffffff;
+      }
+
+      .navbar-custom .navbar-toggler-text {
+        color: #001f3f;
+        font-weight: bold;
+        margin-left: 5px;
+        font-family: 'PT Sans', sans-serif; // Use PT Sans font
+      }
+
+  body
+    // Navigation Bar
+    nav.navbar.navbar-expand-lg.navbar-custom
+      .container
+        a.navbar-brand(href="/")
+          img(src='../images/logo1.jpg', alt='Logo')
+          | CopyCheck
+        .collapse.navbar-collapse#navbarNav
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link.home(href='/dashboard') Dashboard
+            li.nav-item
+              a.nav-link.events(href='/login') Login
+
+    // Content goes here
+    block content
+
+    // Include jQuery and Bootstrap JS (without Popper.js)
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
